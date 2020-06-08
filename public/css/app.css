@@ -1,0 +1,74 @@
+.intro {
+  background-color: #191a1d;
+  height: 600px;
+}
+
+.intro p {
+  color: green;
+}
+
+.intro-svg {
+  fill: #191a1d;
+  stroke: #191a1d;
+}
+
+.intro-nav {
+  position: relative;
+}
+
+.intro-nav_left {
+  display: inline-flex;
+  margin: 0;
+  padding-left: 10%;
+}
+
+.intro-nav_right {
+  display: inline-flex;
+  margin: 0;
+  padding-left: 40%;
+}
+
+.intro-nav ul li {
+  width: 8rem;
+  height: 80px;
+  padding-top: 30px;
+  list-style: none;
+}
+
+.intro-nav ul li:hover {
+  background-color: #336504;
+}
+
+.intro-nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.intro-nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: lightgray;
+  top: 80px;
+  padding-left: 0;
+  z-index: 1;
+  color: black;
+}
+
+.intro-nav ul li ul a {
+  color: black;
+}
+
+.intro-nav ul li:hover ul {
+  display: block;
+  z-index: 1;
+}
+
+.intro-nav ul li ul li:hover {
+  background-color: transparent;
+  border-left: 2px solid #336504;
+}
+
+.intro-nav ul li ul li:hover a {
+  color: #336504;
+}
+

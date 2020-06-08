@@ -1,0 +1,12 @@
+.intro{
+    background-color: $themDark;
+    height: 600px;
+    & p {
+        color: green;
+    }
+
+    &-svg{
+        fill: $themDark;
+        stroke: $themDark;
+    }
+}
