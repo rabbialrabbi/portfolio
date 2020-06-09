@@ -1,0 +1,22 @@
+.header{
+    margin-top: 60px;
+    text-align: center;
+    & p {
+
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+}
+
+.u-line {
+    width: 120px;
+    height: 6px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 80%;
+}
+
+.space {
+    height: 500px;
+}

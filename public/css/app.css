@@ -1,10 +1,29 @@
-.intro {
-  background-color: #191a1d;
-  height: 600px;
+@import url(https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kaushan+Script&family=Varela+Round&display=swap);.header {
+  margin-top: 60px;
+  text-align: center;
 }
 
-.intro p {
-  color: green;
+.header p {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.u-line {
+  width: 120px;
+  height: 6px;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 80%;
+}
+
+.space {
+  height: 500px;
+}
+
+.intro {
+  background-color: #191a1d;
+  height: 800px;
 }
 
 .intro-svg {
@@ -14,61 +33,83 @@
 
 .intro-nav {
   position: relative;
+  text-align: center;
+  padding: 50px;
 }
 
-.intro-nav_left {
-  display: inline-flex;
-  margin: 0;
-  padding-left: 10%;
+.intro-nav_logo {
+  transform: translateY(-40%);
 }
 
-.intro-nav_right {
+.intro-nav ul {
   display: inline-flex;
   margin: 0;
-  padding-left: 40%;
 }
 
 .intro-nav ul li {
-  width: 8rem;
   height: 80px;
   padding-top: 30px;
   list-style: none;
+  text-decoration: none;
 }
 
-.intro-nav ul li:hover {
-  background-color: #336504;
+.intro-nav_left-but {
+  font-size: 3rem;
 }
 
-.intro-nav ul li a {
+.intro-nav_left-but a {
   text-decoration: none;
   color: white;
+  font-family: "Kaushan Script", cursive;
 }
 
-.intro-nav ul li ul {
-  display: none;
-  position: absolute;
-  background-color: lightgray;
-  top: 80px;
-  padding-left: 0;
-  z-index: 1;
-  color: black;
+.intro-nav_right ul li {
+  width: 8rem;
 }
 
-.intro-nav ul li ul a {
-  color: black;
+.intro-nav_right-but a {
+  text-decoration: none;
+  color: lightgrey;
+  font-size: larger;
 }
 
-.intro-nav ul li:hover ul {
-  display: block;
-  z-index: 1;
+.intro-text {
+  text-align: center;
+  transform: translateY(70%);
+  font-family: "Varela Round", sans-serif;
+  color: lightgrey;
+  font-size: 2rem;
 }
 
-.intro-nav ul li ul li:hover {
-  background-color: transparent;
-  border-left: 2px solid #336504;
+.intro-text p {
+  margin: 0;
 }
 
-.intro-nav ul li ul li:hover a {
-  color: #336504;
+.intro-text span {
+  font-family: "Caveat", cursive;
+  font-size: 2.5rem;
+  color: #ba8fff;
+}
+
+.intro-text button {
+  background-color: #6859a8;
+  color: white;
+  font-size: 1rem;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.service {
+  margin-top: 120px;
+  text-align: center;
+  font-family: "open sans", sans-serif;
+}
+
+.service-item {
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 

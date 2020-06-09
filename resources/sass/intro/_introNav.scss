@@ -1,72 +1,46 @@
 .intro{
-    &-nav{
+    &-nav {
         position: relative;
+        text-align: center;
+        padding: 50px;
 
-        &_left{
-            display: inline-flex;
-            margin: 0;
-            padding-left: 10%;
+        &_logo {
+            transform: translateY(-40%);
         }
 
-        &_right{
+        & ul {
             display: inline-flex;
             margin: 0;
-            padding-left: 40%;
         }
 
-        & ul li{
-            width: 8rem;
+        & ul li {
             height: 80px;
-            padding-top: 30px ;
+            padding-top: 30px;
             list-style: none;
-
-        }
-
-        &_but{
-        }
-
-        & ul li:hover{
-            background-color: #336504;
-        }
-
-        & ul li a{
             text-decoration: none;
-            color: white;
         }
 
-        & ul li ul{
-            display: none;
-            position: absolute;
-            background-color: lightgray;
-            top: 80px;
-            padding-left: 0;
-            z-index: 1;
-            color: black;
-        }
-        & ul li ul a{
-            color: black;
+        &_left-but {
+            font-size: 3rem;
+            & a {
+                text-decoration: none;
+                color: white;
+                font-family: "Kaushan Script", cursive;
+            }
         }
 
-        & ul li:hover ul{
-            display: block;
-            z-index: 1;
+        &_right {
+            & ul li {
+                width:8rem;
+            }
+            &-but {
+
+                & a {
+                    text-decoration: none;
+                    color: lightgrey;
+                    font-size: larger;
+                }
+            }
         }
-
-        & ul li ul li:hover {
-            background-color: transparent;
-            border-left: 2px solid #336504;
-        }
-
-        & ul li ul li:hover a {
-            color: #336504;
-        }
-
-
-
-        &_submenu{
-
-        }
-
-
     }
 }

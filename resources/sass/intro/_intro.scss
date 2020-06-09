@@ -1,12 +1,9 @@
 .intro{
-    background-color: $themDark;
-    height: 600px;
-    & p {
-        color: green;
-    }
+    background-color: $themeDark;
+    height: 800px;
 
     &-svg{
-        fill: $themDark;
-        stroke: $themDark;
+        fill: $themeDark;
+        stroke: $themeDark;
     }
 }
