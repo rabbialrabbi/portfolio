@@ -1,0 +1,63 @@
+.skill {
+    &_parameter {
+        &-body{
+            height: 10px;
+            background-color: rgb(200, 200, 200);
+            border-radius: 10px;
+        }
+        &-fill{
+            height: 10px;
+            background-color: $textback;
+            border-radius: 10px;
+        }
+        & h4{
+            padding: 50px 0 30px 0;
+        }
+        & .nok { width: 60%; }
+        & .htc { width: 30%; }
+        & .sam { width: 80%; }
+        & .iph { width: 70%; }
+        & .lgp { width: 10%; }
+
+        & p {
+            margin: 0;
+            padding: 20px 0 10px 0;
+        }
+    }
+
+    &_tag {
+        & h4 {
+            padding: 50px 0 30px 0;
+        }
+        & h4, input, .skill_tag-list {
+            margin-left: 80px;
+        }
+        & input {
+            width: 280px;
+            margin-left: 180px;
+            margin-bottom: 40px;
+            border-style: none ;
+            background-color: $themeGray;
+            border-radius: 5px;
+            padding: 15px 10px 10px 10px;
+        }
+        & input[type=text]:focus {
+            border-radius: 0;
+            outline: none;
+            background-color: white;
+            border-style: none none solid none;
+        }
+
+        &-list {
+            i {
+                padding: 10px;
+                font-size: 18px;
+            }
+        }
+    }
+    & svg {
+        margin-top: 180px;
+        fill: $themeAsphalt;
+        stroke: $themeAsphalt;
+    }
+}
