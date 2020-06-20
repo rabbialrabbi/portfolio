@@ -164,6 +164,10 @@
   cursor: -webkit-grabbing;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header,
 .header_white {
   padding-top: 80px;
@@ -178,6 +182,7 @@
 
 .header .u-line,
 .header_white .u-line {
+  background-color: white;
   width: 160px;
   height: 4px;
   margin-left: auto;
@@ -195,6 +200,31 @@
 
 .space {
   height: 500px;
+}
+
+.uparrow {
+  padding-top: 5px;
+  display: none;
+  color: white;
+  text-align: center;
+  position: fixed;
+  background-color: #38c172;
+  width: 40px;
+  height: 40px;
+  right: 20px;
+  bottom: 20px;
+}
+
+.uparrow a {
+  position: relative;
+  padding: 7px;
+  text-decoration: none;
+  color: white;
+}
+
+.uparrow a:hover {
+  text-decoration: none;
+  color: white;
 }
 
 .intro {
@@ -409,6 +439,30 @@
   padding: 80px 0 180px 0;
 }
 
+.portfolio_img {
+  height: 15rem;
+}
+
+.portfolio_img div {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background-color: #4B5763;
+}
+
+.portfolio_img div h6 {
+  color: #ba8fff;
+}
+
+.portfolio_img div button {
+  color: white;
+  margin-top: 60px;
+  border: none;
+  background-color: #ba8fff;
+  border-radius: 5px;
+  padding: 8px;
+}
+
 .portfolio svg {
   fill: #54606c;
   background-color: #f5f5f5;
@@ -463,5 +517,40 @@
   height: 80px;
   color: white;
   text-align: center;
+}
+
+.contact_button a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact_button a:hover {
+  color: white;
+}
+
+.msg_list h3 {
+  text-align: center;
+}
+
+.msg_header {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.msg_home a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #54606c;
+  border-radius: 5px;
+}
+
+.msg_home a:hover {
+  color: white;
+  background-color: green;
+}
+
+.msg-content {
+  transform: translateX(-10%);
 }
 

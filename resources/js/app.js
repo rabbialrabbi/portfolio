@@ -1,4 +1,7 @@
 import skillSearch from './components/profile/skill-search'
+import skillParameter from './components/profile/skillParameter'
+import portfolioImg from './components/profile/portfolio'
+import sendMessage from "./components/profile/sendMessage";
 
 import Glide, { Controls, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm'
 // new Glide('.glide').mount({ Controls, Breakpoints });
@@ -19,6 +22,9 @@ const app = new Vue({
         msg:'Hi It is working'
     },
     components:{
-      skillSearch
+      skillSearch,
+      skillParameter,
+      portfolioImg,
+      sendMessage
     }
 });

@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 .header, .header_white{
     padding-top: 80px;
     text-align: center;
@@ -8,6 +11,7 @@
     }
 
     & .u-line {
+        background-color: white;
         width: 160px;
         height: 4px;
         margin-left: auto;
@@ -20,6 +24,7 @@
     & p {
         color: $themeGray;
     }
+
 }
 
 .header{
@@ -31,4 +36,27 @@
 
 .space {
     height: 500px;
+}
+
+.uparrow {
+    padding-top: 5px;
+    display: none;
+    color: white;
+    text-align: center;
+    position: fixed;
+    background-color: #38c172;
+    width: 40px;
+    height: 40px;
+    right: 20px;
+    bottom: 20px;
+    & a {
+        position: relative;
+        padding: 7px;
+        text-decoration: none;
+        color: white;
+    }
+    & a:hover {
+        text-decoration: none;
+        color: white;
+    }
 }

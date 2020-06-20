@@ -1,0 +1,27 @@
+.msg{
+    &_list {
+        & h3 {
+            text-align: center;
+        }
+    }
+    &_header{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    &_home{
+        & a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: $themeAsphalt;
+            border-radius: 5px;
+        }
+        & a:hover {
+            color: white ;
+            background-color: green;
+        }
+    }
+    &-content {
+        transform: translateX(-10%);
+    }
+}

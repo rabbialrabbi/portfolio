@@ -5,6 +5,26 @@
     &_body {
         padding: 80px 0 180px 0;
     }
+    &_img {
+        height: 15rem;
+        & div {
+            color: white;
+            text-align: center;
+            padding: 20px;
+            background-color: #4B5763;
+            & h6 {
+                color: $text;
+            }
+            & button {
+                color: white;
+                margin-top: 60px;
+                border: none;
+                background-color: $text;
+                border-radius: 5px;
+                padding: 8px;
+            }
+        }
+    }
 
     & svg {
         fill: $themeAsphalt;
