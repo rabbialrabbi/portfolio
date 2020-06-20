@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="css/app.css">
     <title>Profile</title>
 </head>
 <body>
