@@ -193,7 +193,7 @@
         </div>
     </section>
 </div>
-<script src="{{asset('js/app.js')}}"></script>
+<script src="js/app.js"></script>
 <script>
     $(document).ready(function () {
        $('.portfolio_img').each(function () {
