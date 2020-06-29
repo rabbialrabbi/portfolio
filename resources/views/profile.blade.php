@@ -110,56 +110,7 @@
     </section>
 
     <section id="project" class="portfolio">
-        <div class="container">
-            <div class="header_white pb-5">
-                <p>PORTFOLIO</p>
-                <div class="u-line"></div>
-            </div>
-
-            <div class="row justify-content-md-center no-gutters portfolio_body ">
-                <div class="portfolio_img col-sm-4">
-                    <img class="d-block" width="100%" height="100%" src="image/ticket_front.jpg" alt="ticket_front">
-                    <div class="d-none" style="width: 100%;height: 100%">
-                        <h5>Tool Used to build</h5>
-                        <h6>Laravel/Vue.js</h6>
-                        <button onclick='window.open("http://ticketbd.herokuapp.com/","_blank")'>Show More</button>
-                    </div>
-                </div>
-                <div class="portfolio_img col-sm-4">
-                    <img width="100%" height="100%" src="image/lov_front.jpg" alt="lov_front">
-                    <div class="d-none" style="width: 100%;height: 100%">
-                        <h5>Tool Used to build</h5>
-                        <h6>HTML/CSS (PSD to HTML)</h6>
-                        <button onclick='window.open("https://rabbialrabbi.github.io/Lovinflat","_blank")'>Show More</button>
-                    </div>
-                </div>
-                <div class="portfolio_img col-sm-4">
-                    <img width="100%" height="100%" src="image/admin_front.jpg" alt="admin_front">
-                    <div class="d-none" style="width: 100%;height: 100%">
-                        <h5>Tool Used to build</h5>
-                        <h6>Laravel/JQuery</h6>
-                        <button onclick="window.open('http://khamarbari.herokuapp.com/','_blank')" >Show More</button>
-                    </div>
-                </div>
-                <div class="portfolio_img col-sm-4">
-                    <img width="100%" height="100%" src="image/monster_log.jpg" alt="monster_log">
-                    <div class="d-none" style="width: 100%;height: 100%">
-                        <h5>Tool Used to build</h5>
-                        <h6>Vue.js</h6>
-                        <button onclick="window.open('https://monsterbite.herokuapp.com/','_blank')">Show More</button>
-                    </div>
-                </div>
-
-                <div class="portfolio_img col-sm-4">
-                    <img width="100%" height="100%" src="image/legend_front.jpg" alt="legend_front">
-                    <div class="d-none" style="width: 100%;height: 100%">
-                        <h5>Tool Used to build</h5>
-                        <h6>HTML/CSS (PSD to HTML)</h6>
-                        <button onclick="window.open('https://rabbialrabbi.github.io/legend','_blank')">Show More</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <portfolio-img></portfolio-img>
         <svg
             preserveAspectRatio="none"
             viewBox="0 0 100 102"
@@ -179,10 +130,7 @@
                 <p>Get In Touch</p>
                 <div class="u-line"></div>
             </div>
-
             <send-message csrf = {{csrf_token()}}></send-message>
-
-
         </div>
 
     </section>
@@ -195,20 +143,20 @@
 </div>
 <script src="js/app.js"></script>
 <script>
-    $(document).ready(function () {
-       $('.portfolio_img').each(function () {
-               $(this).hover(
-                   function(){
-                      $(this).find('img').removeClass('d-block').addClass('d-none');
-                      $(this).find('div').removeClass('d-none').addClass('d-block');
-                   },
-                   function(){
-                       $(this).find('img').removeClass('d-none').addClass('d-block');
-                       $(this).find('div').removeClass('d-block').addClass('d-none');
-                   }
-               );
-       })
-    })
+    // $(document).ready(function () {
+    //    $('.portfolio_img').each(function () {
+    //            $(this).hover(
+    //                function(){
+    //                   $(this).find('img').removeClass('d-block').addClass('d-none');
+    //                   $(this).find('div').removeClass('d-none').addClass('d-block');
+    //                },
+    //                function(){
+    //                    $(this).find('img').removeClass('d-none').addClass('d-block');
+    //                    $(this).find('div').removeClass('d-block').addClass('d-none');
+    //                }
+    //            );
+    //    })
+    // })
 
     window.onscroll = function () {
         if(document.body.scrollTop > 150 || document.documentElement.scrollTop > 150){
