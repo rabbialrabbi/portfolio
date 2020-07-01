@@ -1,30 +1,6 @@
 <template>
     <div>
-        <transition-group name="fade" tag="div">
-            <div v-for="i in [currentIndex]" :key="i">
-                <div>
-                    <img width="400px" height="300px" :src="currentImg" />
-                    <a class="prev" @click.prevent="prev" >&#10094; Previous</a>
-                    <a class="next" @click.prevent="next" >Next &#10095; </a>
-                </div>
 
-                <div class="modal-body" :key="i">
-                    <slot name="body">
-                        default body
-                    </slot>
-                </div>
-
-                <div class="modal-footer" :key="i">
-                    <slot name="footer">
-                        default footer
-                        <button class="modal-default-button" @click="$emit('close')">
-                            OK
-                        </button>
-                    </slot>
-                </div>
-            </div>
-
-        </transition-group>
 
     </div>
 </template>
