@@ -8,7 +8,7 @@
             <button @click='showModal = true'>Show More</button>
 
         </div>
-        <modal v-if="showModal" @close="showModal = false" :info="portfolio.data">
+        <modal v-if="showModal" @close="showModal = false" :info="portfolio.data" :name="portfolio.name">
             <h3 slot="header">custom header</h3>
         </modal>
     </div>
@@ -22,6 +22,11 @@
             return{
                 hoverStatus: false,
                 showModal:false,
+            }
+        },
+        methods:{
+            bblur(){
+
             }
         }
     }

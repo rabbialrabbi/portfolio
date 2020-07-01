@@ -5803,11 +5803,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
- // import 'swiper/css/swiper.css'
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "modal",
-  props: ['info'],
+  props: ['info', 'name'],
   data: function data() {
     return {
       images: ['image/ticket_front.jpg', 'image/lov_front.jpg', 'image/admin_front.jpg', 'image/monster_log.jpg'],
@@ -5952,6 +5963,9 @@ __webpack_require__.r(__webpack_exports__);
       hoverStatus: false,
       showModal: false
     };
+  },
+  methods: {
+    bblur: function bblur() {}
   }
 });
 
@@ -35278,34 +35292,64 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "modal-img_uline" }),
           _vm._v(" "),
-          _c("div", { staticClass: "pl-3" }, [
-            _c("h4", [_vm._v("Tools used to build")]),
+          _c("div", { staticClass: "modal-text" }, [
+            _c("div", [
+              _c("h4", { staticClass: "modal-skill_header" }, [
+                _vm._v(_vm._s(_vm.name))
+              ]),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c(
+                "ul",
+                { staticClass: "pl-0" },
+                [
+                  _c("span", { staticClass: "modal-skill_tool" }, [
+                    _vm._v("Tools:")
+                  ]),
+                  _vm._v(" "),
+                  _vm._l(_vm.info.skills, function(skill) {
+                    return _c("li", { staticClass: "modal-skill" }, [
+                      _vm._v(_vm._s(skill))
+                    ])
+                  })
+                ],
+                2
+              )
+            ]),
             _vm._v(" "),
-            _c(
-              "ul",
-              { staticClass: "pl-1" },
-              _vm._l(_vm.info.skills, function(skill) {
-                return _c("li", { staticClass: "d-inline-block" }, [
-                  _vm._v(_vm._s(skill))
-                ])
-              }),
-              0
-            )
+            _c("div", { staticClass: "modal-fetcher" }, [
+              _c("h6", { staticClass: "modal-fetcher_header" }, [
+                _vm._v("Fetchers:")
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "row pl-3" },
+                _vm._l(_vm.info.fetchers, function(fetcher) {
+                  return _c("div", { staticClass: "col-6 pt-1" }, [
+                    _c("i", { staticClass: "fas fa-star-of-life" }),
+                    _vm._v(_vm._s(fetcher))
+                  ])
+                }),
+                0
+              )
+            ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "pl-3" }, [
-            _c("h4", [_vm._v("Fetchers")]),
+          _c("div", { staticClass: "row modal-bottom" }, [
+            _vm._m(0),
             _vm._v(" "),
-            _c(
-              "ul",
-              { staticClass: "pl-1" },
-              _vm._l(_vm.info.fetchers, function(fetcher) {
-                return _c("li", { staticClass: "d-inline-block" }, [
-                  _vm._v(_vm._s(fetcher))
-                ])
-              }),
-              0
-            )
+            _c("div", { staticClass: "col-6 modal-bottom_cross" }, [
+              _c("i", {
+                staticClass: "fas fa-times",
+                on: {
+                  click: function($event) {
+                    return _vm.$emit("close")
+                  }
+                }
+              })
+            ])
           ])
         ],
         1
@@ -35313,7 +35357,16 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-6 modal-bottom_button" }, [
+      _c("button", [_vm._v("View Site")])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -35448,7 +35501,7 @@ var render = function() {
         ? _c(
             "modal",
             {
-              attrs: { info: _vm.portfolio.data },
+              attrs: { info: _vm.portfolio.data, name: _vm.portfolio.name },
               on: {
                 close: function($event) {
                   _vm.showModal = false
