@@ -2,7 +2,8 @@
 //@import url('https://fonts.googleapis.com/css?family=Nunito');
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kaushan+Script&family=Varela+Round&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/*font-family: 'Raleway', sans-serif*/
 // Variables
 @import 'variables';
 
@@ -13,6 +14,7 @@
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
 @import "global";
+@import "intro/particles";
 @import "intro/intro";
 @import "intro/introNav";
 @import "intro/introText";
@@ -22,3 +24,4 @@
 @import "contact/contact";
 @import "contact/roundButton";
 @import "messageList/messageList";
+@import "portfolio/modal";

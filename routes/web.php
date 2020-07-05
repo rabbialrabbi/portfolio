@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('profile');
 });
+Route::view('/test','test');
 
 Route::post('/message', function (Request $request){
     try{

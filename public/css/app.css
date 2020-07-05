@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kaushan+Script&family=Varela+Round&display=swap);.glide {
+@import url(https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kaushan+Script&family=Varela+Round&display=swap);@import url(https://fonts.googleapis.com/css2?family=Raleway&display=swap);/*font-family: 'Raleway', sans-serif*/
+
+.glide {
   position: relative;
   width: 100%;
   box-sizing: border-box;
@@ -227,9 +229,20 @@ html {
   color: white;
 }
 
-.intro {
-  background-color: #191a1d;
-  height: 800px;
+.top-particles {
+  position: relative;
+  height: 700px;
+}
+
+.top-particles_background {
+  position: absolute;
+  width: 100%;
+}
+
+.top-particles_background svg {
+  fill: #f5f5f5;
+  stroke: #f5f5f5;
+  background-color: #191C1D;
 }
 
 .intro-svg {
@@ -294,10 +307,11 @@ html {
 }
 
 .intro-text {
+  display: block;
   text-align: center;
-  transform: translateY(70%);
+  transform: translateY(30%);
   font-family: "Varela Round", sans-serif;
-  color: lightgrey;
+  color: white;
   font-size: 2rem;
 }
 
@@ -318,11 +332,11 @@ html {
   border: 2px solid white;
   border-radius: 5px;
   padding: 10px;
-  margin: 20px;
+  margin-top: 40px;
 }
 
 .service {
-  padding-top: 120px;
+  padding-top: 180px;
   text-align: center;
   font-family: "open sans", sans-serif;
   background-color: #f5f5f5;
@@ -443,18 +457,18 @@ html {
   height: 15rem;
 }
 
-.portfolio_img div {
+.portfolio_img-hover {
   color: white;
   text-align: center;
   padding: 20px;
   background-color: #4B5763;
 }
 
-.portfolio_img div h6 {
+.portfolio_img-hover h6 {
   color: #ba8fff;
 }
 
-.portfolio_img div button {
+.portfolio_img-hover button {
   color: white;
   margin-top: 60px;
   border: none;
@@ -552,5 +566,135 @@ html {
 
 .msg-content {
   transform: translateX(-10%);
+}
+
+/*
+ *   Custom Modal Style
+ */
+
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  transition: opacity 0.3s ease;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+  width: 600px;
+  margin: 0px auto;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+  transition: all 0.3s ease;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.modal-header h3 {
+  margin-top: 0;
+  color: #42b983;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
+
+.modal-default-button {
+  float: right;
+}
+
+.modal-img_uline {
+  height: 4px;
+  background-color: dodgerblue;
+}
+
+.modal-text {
+  padding: 20px 10px 20px 10px;
+}
+
+.modal-skill {
+  display: inline;
+}
+
+.modal-skill_header {
+  font-family: "Raleway", sans-serif;
+}
+
+.modal-skill_tool {
+  font-weight: bolder;
+}
+
+.modal-fetcher_header {
+  font-weight: bolder;
+}
+
+.modal-fetcher i {
+  font-size: 11px;
+  color: grey;
+  padding-right: 5px;
+  transform: translateY(-20%);
+}
+
+.modal-bottom_button {
+  text-align: center;
+}
+
+.modal-bottom_button button {
+  width: 140px;
+  background-color: #6859a8;
+  color: white;
+  font-size: 1rem;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.modal-bottom_cross {
+  text-align: right;
+}
+
+.modal-bottom_cross i {
+  margin: 25px 50px 30px 0;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  font-size: 30px;
+  color: gray;
+  cursor: pointer;
+}
+
+.modal-bottom_cross i:hover {
+  background-color: lightgrey;
+  color: white;
+}
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  transform: scale(1.1);
 }
 
