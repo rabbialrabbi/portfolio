@@ -1,8 +1,9 @@
 .intro-text{
+    display: block;
     text-align: center;
-    transform: translateY(70%);
+    transform: translateY(30%);
     font-family: 'Varela Round', sans-serif;
-    color: lightgrey;
+    color: white;
     font-size: 2rem;
     & p {
         margin: 0;
@@ -20,6 +21,6 @@
         border: 2px solid white;
         border-radius: 5px;
         padding: 10px;
-        margin: 20px;
+        margin-top: 40px;
     }
 }

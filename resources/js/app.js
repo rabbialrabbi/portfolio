@@ -4,7 +4,11 @@ import portfolioImg from './components/protfolio/portfolio'
 import sendMessage from "./components/profile/sendMessage";
 import modal from './components/protfolio/modal/modal';
 import VueAwesomeSwiper from "vue-awesome-swiper";
+import TopComponent from "./components/top/TopComponent";
 import 'swiper/css/swiper.css'
+import VueParticles from 'vue-particles'
+// import particlesJS from 'particles.js'
+import par from "./particles"
 
 import Glide, { Controls, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm'
 // new Glide('.glide').mount({ Controls, Breakpoints });
@@ -12,6 +16,8 @@ import Glide, { Controls, Breakpoints } from '@glidejs/glide/dist/glide.modular.
 require('./bootstrap');
 window.Vue = require('vue');
 Vue.use(VueAwesomeSwiper);
+
+Vue.use(VueParticles);
 
 
 
@@ -32,5 +38,6 @@ const app = new Vue({
       skillParameter,
       portfolioImg,
       sendMessage,
+      TopComponent,
     }
 });

@@ -229,9 +229,20 @@ html {
   color: white;
 }
 
-.intro {
-  background-color: #191a1d;
-  height: 800px;
+.top-particles {
+  position: relative;
+  height: 700px;
+}
+
+.top-particles_background {
+  position: absolute;
+  width: 100%;
+}
+
+.top-particles_background svg {
+  fill: #f5f5f5;
+  stroke: #f5f5f5;
+  background-color: #191C1D;
 }
 
 .intro-svg {
@@ -296,10 +307,11 @@ html {
 }
 
 .intro-text {
+  display: block;
   text-align: center;
-  transform: translateY(70%);
+  transform: translateY(30%);
   font-family: "Varela Round", sans-serif;
-  color: lightgrey;
+  color: white;
   font-size: 2rem;
 }
 
@@ -320,11 +332,11 @@ html {
   border: 2px solid white;
   border-radius: 5px;
   padding: 10px;
-  margin: 20px;
+  margin-top: 40px;
 }
 
 .service {
-  padding-top: 120px;
+  padding-top: 180px;
   text-align: center;
   font-family: "open sans", sans-serif;
   background-color: #f5f5f5;

@@ -25,19 +25,19 @@
                 hoverStatus :false,
                 portfolioInfo :[
                     {name:'Ticketbd',imgLinks:'image/ticket_front.jpg',skills: 'Laravel/Vue.js',
-                        data:{skills:['Laravel, ','Vue.js, ','Chart.js'],fetchers:['User Authentication','Ticket Booking','Dashboard','Shows result in Chart']}
+                        data:{skills:['Laravel, ','Vue.js, ','Chart.js'],fetchers:['User Authentication','Ticket Booking','Dashboard','Shows result in Chart'],link:'http://ticketbd.herokuapp.com/'}
                         },
                     {name:'LovingFlat',imgLinks:'image/lov_front.jpg',skills: 'HTML/CSS (PSD to HTML)',
-                        data:{skills:['Laravel, ','Vue.js','Chart.js'],fetchers:['User Authentication','Ticket Booking','Dashboard','Shows result in Chart']}
+                        data:{skills:['Laravel, ','Vue.js','Chart.js'],fetchers:['User Authentication','Ticket Booking','Dashboard','Shows result in Chart'],link:'https://rabbialrabbi.github.io/Lovinflat'}
                         },
                     {name:'Administrative',imgLinks:'image/admin_front.jpg',skills: 'Laravel/JQuery',
-                        data:{skills:['Laravel','Vue.js','Chart.js'],fetchers:['User Authentication','Ticket Booking','Dashboard','Shows result in Chart']}
+                        data:{skills:['Laravel','Vue.js','Chart.js'],fetchers:['User Authentication','Ticket Booking','Dashboard','Shows result in Chart'],link:'http://khamarbari.herokuapp.com/'}
                     },
                     {name:'MonsterBite',imgLinks:'image/monster_log.jpg',skills: 'Vue.js',
-                        data:{skills:['Laravel','Vue.js','Chart.js'],fetchers:['User Authentication','Ticket Booking','Dashboard','Shows result in Chart']}
+                        data:{skills:['Laravel','Vue.js','Chart.js'],fetchers:['User Authentication','Ticket Booking','Dashboard','Shows result in Chart'],link:'https://rabbialrabbi.github.io/monsterbite/'}
                     },
                     {name:'Legend ',imgLinks:'image/legend_front.jpg',skills: 'HTML/CSS (PSD to HTML)',
-                        data:{skills:['Laravel','Vue.js','Chart.js'],fetchers:['User Authentication','Ticket Booking','Dashboard','Shows result in Chart']}
+                        data:{skills:['Laravel','Vue.js','Chart.js'],fetchers:['User Authentication','Ticket Booking','Dashboard','Shows result in Chart'],link:'https://rabbialrabbi.github.io/legend'}
                     },
                 ],
             }

@@ -27,7 +27,7 @@
                 </div>
                 <div class="row modal-bottom">
                     <div class="col-6 modal-bottom_button">
-                        <button >View Site</button>
+                        <button @click="openWindow()" >View Site</button>
                     </div>
                     <div class="col-6 modal-bottom_cross">
                         <i class="fas fa-times" @click="$emit('close')"></i>
@@ -66,6 +66,11 @@
                 },
 
             }
+        },
+        methods:{
+          openWindow(){
+              window.open(this.info.link,'_blank')
+          }
         },
         components: {
             Swiper,
