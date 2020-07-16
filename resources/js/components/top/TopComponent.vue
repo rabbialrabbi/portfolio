@@ -26,32 +26,33 @@
         </div>
 
         <div class="intro">
-            <nav class="intro-nav">
-                <div class="row">
-                    <div class="col-4">
-                        <ul class="intro-nav_logo">
-                            <li class="intro-nav_left-but"><a href="#">R. Anowar</a></li>
-                        </ul>
+            <div class="intro-matrix">
+                <nav class="intro-nav">
+                    <div class="row">
+                        <div class="col-4">
+                            <ul class="intro-nav_logo">
+                                <li class="intro-nav_left-but"><a href="#">R. Anowar</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2"></div>
+                        <div class="col-6 intro-nav_right">
+                            <ul>
+                                <li class="intro-nav_right-but"><a href="#project">Project</a></li>
+                                <li class="intro-nav_right-but"><a href="#skill">About</a></li>
+                                <li class="intro-nav_right-but"><a href="#contact">Blog</a></li>
+                                <li class="intro-nav_right-but"><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-2"></div>
-                    <div class="col-6 intro-nav_right">
-                        <ul>
-                            <li class="intro-nav_right-but"><a href="#project">Project</a></li>
-                            <li class="intro-nav_right-but"><a href="#skill">About</a></li>
-                            <li class="intro-nav_right-but"><a href="#contact">Blog</a></li>
-                            <li class="intro-nav_right-but"><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
+                </nav>
+
+                <div class="intro-text">
+                    <p>Hello, I'm <span>Rabbial Anowar</span></p>
+                    <p>A Full-Stack Web Developer</p>
+                    <button onclick="window.location.href='#project'">View My Project</button>
                 </div>
-            </nav>
-
-            <div class="intro-text">
-                <p>Hello, I'm <span>Rabbial Anowar</span></p>
-                <p>A Full-Stack Web Developer</p>
-                <button onclick="window.location.href='#project'">View My Project</button>
             </div>
-        </div>
-
+            </div>
     </div>
 
 </template>

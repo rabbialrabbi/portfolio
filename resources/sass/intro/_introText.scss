@@ -1,7 +1,20 @@
+.intro {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+
 .intro-text{
-    display: block;
+    //position: absolute;
+    display: inline-block;
     text-align: center;
-    transform: translateY(30%);
+    width: 100%;
+    //top: 50%;
+    //left: 50%;
+    transform: translateY(60%);
+
     font-family: 'Varela Round', sans-serif;
     color: white;
     font-size: 2rem;

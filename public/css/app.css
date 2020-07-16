@@ -231,11 +231,10 @@ html {
 
 .top-particles {
   position: relative;
-  height: 700px;
+  height: 100%;
 }
 
 .top-particles_background {
-  position: absolute;
   width: 100%;
 }
 
@@ -306,10 +305,18 @@ html {
   text-decoration: none;
 }
 
+.intro {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 .intro-text {
-  display: block;
+  display: inline-block;
   text-align: center;
-  transform: translateY(30%);
+  width: 100%;
+  transform: translateY(60%);
   font-family: "Varela Round", sans-serif;
   color: white;
   font-size: 2rem;
@@ -336,7 +343,7 @@ html {
 }
 
 .service {
-  padding-top: 180px;
+  padding-top: 60px;
   text-align: center;
   font-family: "open sans", sans-serif;
   background-color: #f5f5f5;

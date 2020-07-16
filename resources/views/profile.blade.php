@@ -13,7 +13,10 @@
 <body>
 <div id="app">
     <section id="top">
-        <top-component></top-component>
+        <div>
+            <top-component></top-component>
+        </div>
+
 
         {{--<div class="intro">
             <nav class="intro-nav">

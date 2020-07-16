@@ -5892,43 +5892,52 @@ __webpack_require__.r(__webpack_exports__);
         data: {
           skills: ['Laravel, ', 'Vue.js, ', 'Chart.js'],
           fetchers: ['User Authentication', 'Ticket Booking', 'Dashboard', 'Shows result in Chart'],
-          link: 'http://ticketbd.herokuapp.com/'
+          link: ['image/ticket_front.jpg', 'image/ticket_add.jpg', 'image/ticket_chart.jpg', 'image/ticket_body.jpg']
+        }
+      }, {
+        name: 'Medicine Shop',
+        imgLinks: 'image/medi_front.jpg',
+        skills: 'Laravel/Vue.js',
+        data: {
+          skills: ['Laravel, ', 'Vue.js, ', 'bootstrap'],
+          fetchers: ['Multi Authentication', 'Sub E-commerce', 'Dashboard', 'Admin Panel', 'Order', 'Sales'],
+          link: ['image/medi_front.jpg', 'image/medi_list.jpg', 'image/medi_input.jpg', 'image/medi_view.jpg']
         }
       }, {
         name: 'LovingFlat',
         imgLinks: 'image/lov_front.jpg',
         skills: 'HTML/CSS (PSD to HTML)',
         data: {
-          skills: ['Laravel, ', 'Vue.js', 'Chart.js'],
-          fetchers: ['User Authentication', 'Ticket Booking', 'Dashboard', 'Shows result in Chart'],
-          link: 'https://rabbialrabbi.github.io/Lovinflat'
+          skills: ['HTML, ', 'CSS'],
+          fetchers: ['Profile List', 'Contact', 'Skills'],
+          link: ['image/lov_front.jpg', 'image/lov_skill.jpg', 'image/lov_team.jpg']
         }
       }, {
         name: 'Administrative',
         imgLinks: 'image/admin_front.jpg',
         skills: 'Laravel/JQuery',
         data: {
-          skills: ['Laravel', 'Vue.js', 'Chart.js'],
-          fetchers: ['User Authentication', 'Ticket Booking', 'Dashboard', 'Shows result in Chart'],
-          link: 'http://khamarbari.herokuapp.com/'
+          skills: ['Laravel', 'JQurey', 'SPA'],
+          fetchers: ['Multi Language', 'Single Page Application', 'CRUD', 'Authentication'],
+          link: ['image/admin_front.jpg', 'image/admin_filter.jpg', 'image/admin_edit.jpg']
         }
       }, {
         name: 'MonsterBite',
         imgLinks: 'image/monster_log.jpg',
         skills: 'Vue.js',
         data: {
-          skills: ['Laravel', 'Vue.js', 'Chart.js'],
-          fetchers: ['User Authentication', 'Ticket Booking', 'Dashboard', 'Shows result in Chart'],
-          link: 'https://rabbialrabbi.github.io/monsterbite/'
+          skills: ['Vue.js'],
+          fetchers: ['Simple Game', 'Special Attach', 'Healing'],
+          link: ['image/monster_front.jpg', 'image/monster_log.jpg', 'image/monster_newgame.jpg']
         }
       }, {
         name: 'Legend ',
         imgLinks: 'image/legend_front.jpg',
         skills: 'HTML/CSS (PSD to HTML)',
         data: {
-          skills: ['Laravel', 'Vue.js', 'Chart.js'],
-          fetchers: ['User Authentication', 'Ticket Booking', 'Dashboard', 'Shows result in Chart'],
-          link: 'https://rabbialrabbi.github.io/legend'
+          skills: ['HTML', 'Vue.js', 'Chart.js'],
+          fetchers: ['Profile List', 'Contact', 'Skills'],
+          link: ['image/legend_front.jpg', 'image/legend_contact.jpg', 'image/legend_portfolio.jpg']
         }
       }]
     };
@@ -37129,7 +37138,7 @@ var render = function() {
             "swiper",
             { ref: "mySwiper", attrs: { options: _vm.swiperOptions } },
             [
-              _vm._l(_vm.images, function(image) {
+              _vm._l(_vm.info.link, function(image) {
                 return _c("swiper-slide", { key: image }, [
                   _c("img", {
                     attrs: {
@@ -37461,53 +37470,55 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "intro" }, [
-      _c("nav", { staticClass: "intro-nav" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-4" }, [
-            _c("ul", { staticClass: "intro-nav_logo" }, [
-              _c("li", { staticClass: "intro-nav_left-but" }, [
-                _c("a", { attrs: { href: "#" } }, [_vm._v("R. Anowar")])
+      _c("div", { staticClass: "intro-matrix" }, [
+        _c("nav", { staticClass: "intro-nav" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-4" }, [
+              _c("ul", { staticClass: "intro-nav_logo" }, [
+                _c("li", { staticClass: "intro-nav_left-but" }, [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("R. Anowar")])
+                ])
               ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-2" }),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-6 intro-nav_right" }, [
-            _c("ul", [
-              _c("li", { staticClass: "intro-nav_right-but" }, [
-                _c("a", { attrs: { href: "#project" } }, [_vm._v("Project")])
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "intro-nav_right-but" }, [
-                _c("a", { attrs: { href: "#skill" } }, [_vm._v("About")])
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "intro-nav_right-but" }, [
-                _c("a", { attrs: { href: "#contact" } }, [_vm._v("Blog")])
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "intro-nav_right-but" }, [
-                _c("a", { attrs: { href: "#contact" } }, [_vm._v("Contact")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-2" }),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-6 intro-nav_right" }, [
+              _c("ul", [
+                _c("li", { staticClass: "intro-nav_right-but" }, [
+                  _c("a", { attrs: { href: "#project" } }, [_vm._v("Project")])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "intro-nav_right-but" }, [
+                  _c("a", { attrs: { href: "#skill" } }, [_vm._v("About")])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "intro-nav_right-but" }, [
+                  _c("a", { attrs: { href: "#contact" } }, [_vm._v("Blog")])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "intro-nav_right-but" }, [
+                  _c("a", { attrs: { href: "#contact" } }, [_vm._v("Contact")])
+                ])
               ])
             ])
           ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "intro-text" }, [
-        _c("p", [
-          _vm._v("Hello, I'm "),
-          _c("span", [_vm._v("Rabbial Anowar")])
         ]),
         _vm._v(" "),
-        _c("p", [_vm._v("A Full-Stack Web Developer")]),
-        _vm._v(" "),
-        _c(
-          "button",
-          { attrs: { onclick: "window.location.href='#project'" } },
-          [_vm._v("View My Project")]
-        )
+        _c("div", { staticClass: "intro-text" }, [
+          _c("p", [
+            _vm._v("Hello, I'm "),
+            _c("span", [_vm._v("Rabbial Anowar")])
+          ]),
+          _vm._v(" "),
+          _c("p", [_vm._v("A Full-Stack Web Developer")]),
+          _vm._v(" "),
+          _c(
+            "button",
+            { attrs: { onclick: "window.location.href='#project'" } },
+            [_vm._v("View My Project")]
+          )
+        ])
       ])
     ])
   }

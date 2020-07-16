@@ -3,7 +3,7 @@
         <div class="modal-wrapper">
             <div class="modal-container">
                 <swiper ref="mySwiper" :options="swiperOptions">
-                    <swiper-slide v-for="image in images" :key="image">
+                    <swiper-slide v-for="image in info.link" :key="image">
                         <img width="600px" height="400px" :src="image" :alt="image">
                     </swiper-slide>
                     <div class="swiper-pagination" slot="pagination"></div>
