@@ -69,7 +69,7 @@
         },
         methods:{
           openWindow(){
-              window.open(this.info.link,'_blank')
+              window.open(this.info.srcs,'_blank')
           }
         },
         components: {
