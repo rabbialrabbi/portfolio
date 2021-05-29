@@ -5712,7 +5712,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       filterKey: "",
-      posts: ['HTML', 'CSS', 'JavaScript', 'Vue', 'Ajax', 'JSON', 'PHP', 'Unit', 'Laravel', 'JQuery', 'OOP', 'Regex', 'Glup', 'Git', 'SQL', 'MySql', 'PDO', 'Illustrator', 'Photoshop']
+      posts: ['HTML', 'CSS', 'JavaScript', 'Vue', 'Ajax', 'JSON', 'PHP', 'Unit', 'Laravel', 'JQuery', 'OOP', 'Regex', 'Glup', 'Git', 'SQL', 'MySql', 'PDO', 'Illustrator', 'Photoshop', 'Bootstrap', 'OAuth2.0']
     };
   },
   computed: {
@@ -5855,7 +5855,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     openWindow: function openWindow() {
-      window.open(this.info.link, '_blank');
+      window.open(this.info.srcs, '_blank');
     }
   },
   components: {

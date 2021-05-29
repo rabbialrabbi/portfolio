@@ -17,7 +17,7 @@
                 filterKey: "",
                 posts: ['HTML', 'CSS', 'JavaScript', 'Vue', 'Ajax', 'JSON',
                     'PHP', 'Unit', 'Laravel', 'JQuery', 'OOP', 'Regex', 'Glup',
-                    'Git', 'SQL', 'MySql', 'PDO', 'Illustrator', 'Photoshop',
+                    'Git', 'SQL', 'MySql', 'PDO', 'Illustrator', 'Photoshop', 'Bootstrap','OAuth2.0',
                 ]
             };
         },
