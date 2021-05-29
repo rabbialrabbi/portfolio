@@ -22,7 +22,7 @@
                     { tool:"Laravel", score:80 },
                     { tool:"JavaScript", score:70 },
                     { tool:"Vue.js", score:70 },
-                    { tool:"JQuery", score:60 },
+                    { tool:"JQuery", score:70 },
 
                 ]
             }

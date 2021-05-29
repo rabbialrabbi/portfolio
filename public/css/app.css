@@ -215,6 +215,7 @@ html {
   height: 40px;
   right: 20px;
   bottom: 20px;
+  z-index: 99;
 }
 
 .uparrow a {
@@ -229,95 +230,65 @@ html {
   color: white;
 }
 
-.top-particles {
+.intro {
   position: relative;
+  background: #191c1d;
+  height: 900px;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
   height: 100%;
 }
 
-.top-particles_background {
+.nav_bar {
+  margin-top: 35px;
+  margin-bottom: 10px;
+  position: absolute;
   width: 100%;
 }
 
-.top-particles_background svg {
-  fill: #f5f5f5;
-  stroke: #f5f5f5;
-  background-color: #191C1D;
-}
-
-.intro-svg {
-  fill: #191a1d;
-  stroke: #191a1d;
-  background-color: #f5f5f5;
-}
-
-.intro-nav {
-  position: relative;
-  text-align: center;
-  padding: 50px;
-}
-
-.intro-nav_logo {
-  transform: translateY(-40%);
-}
-
-.intro-nav ul {
-  display: inline-flex;
-  margin: 0;
-}
-
-.intro-nav ul li {
-  height: 80px;
-  padding-top: 30px;
-  list-style: none;
-  text-decoration: none;
-}
-
-.intro-nav_left-but {
+.navbar-brand {
   font-size: 3rem;
-}
-
-.intro-nav_left-but a {
   text-decoration: none;
   color: white;
   font-family: "Kaushan Script", cursive;
 }
 
-.intro-nav_left-but a:hover {
-  color: #ba8fff;
-  text-decoration: none;
-}
-
-.intro-nav_right ul li {
-  width: 8rem;
-}
-
-.intro-nav_right-but a {
-  text-decoration: none;
+.nav-item {
+  padding: 0 25px;
   color: lightgrey;
   font-size: larger;
 }
 
-.intro-nav_right-but a:hover {
+.nav-item:hover {
   background-color: black;
   border-radius: 5px;
-  padding: 10px 15px 10px 15px;
-  color: lightgrey;
-  text-decoration: none;
 }
 
-.intro {
+.nav-item:hover a {
+  color: #ba8fff !important;
+  font-weight: 600;
+}
+
+.nav_bar .active {
+  color: #ba8fff !important;
+  font-weight: 600;
+}
+
+.intro_center {
   position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
+  text-align: center;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .intro-text {
-  display: inline-block;
   text-align: center;
-  width: 100%;
-  transform: translateY(60%);
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Varela Round', sans-serif;
   color: white;
   font-size: 2rem;
 }
@@ -327,7 +298,7 @@ html {
 }
 
 .intro-text span {
-  font-family: "Caveat", cursive;
+  font-family: 'Caveat', cursive;
   font-size: 2.5rem;
   color: #ba8fff;
 }
@@ -342,6 +313,165 @@ html {
   margin-top: 40px;
 }
 
+.intro svg {
+  position: absolute;
+  bottom: 0;
+  fill: #f5f5f5;
+  stroke: #f5f5f5;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 480px) {
+  .intro_center {
+    padding: 0 5px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 30%;
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  .intro-text span {
+    display: block;
+  }
+
+  .nav-item {
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9;
+    border-radius: 5px;
+    margin-bottom: 3px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navbar-brand {
+    font-size: 42px;
+  }
+}
+
+/*
+.intro{
+    //background-color: $themeDark;
+    //height: 700px;
+    //position: absolute;
+    //left: 0;
+    //top: 0;
+    //width: 100%;
+
+    &-svg{
+        fill: $themeDark;
+        stroke: $themeDark;
+        background-color: $themeGray;
+    }
+}
+
+
+.intro{
+    &-nav {
+        //position: absolute;
+        //width: 100%;
+        //padding: 50px;
+
+        &_logo {
+            transform: translateY(-40%);
+            text-align: left;
+        }
+
+        & ul {
+            display: inline-flex;
+            margin: 0;
+        }
+
+        & ul li {
+            height: 80px;
+            padding-top: 30px;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        &_left-but {
+            font-size: 3rem;
+            & a {
+                text-decoration: none;
+                color: white;
+                font-family: "Kaushan Script", cursive;
+            }
+
+            & a:hover {
+                color: $text;
+                text-decoration: none;
+            }
+        }
+
+        &_right {
+            text-align: center;
+            & ul li {
+                width:8rem;
+            }
+            &-but {
+
+                & a {
+                    text-decoration: none;
+                    color: lightgrey;
+                    font-size: larger;
+                }
+                & a:hover {
+                    background-color: black;
+                    border-radius: 5px;
+                    padding: 10px 15px 10px 15px;
+                    color: lightgrey;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+//.intro {
+//    position: absolute;
+//    width: 100%;
+//    top: 0;
+//    left: 0;
+//
+//}
+
+.intro-text{
+    text-align: center;
+    width: 100%;
+    transform: translateY(60%);
+
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    font-size: 2rem;
+    & p {
+        margin: 0;
+    }
+    & span {
+        font-family: 'Caveat', cursive;
+        font-size: 2.5rem;
+        color: $text;
+    }
+
+    & button {
+        background-color: $textback;
+        color: white;
+        font-size: 1rem;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 40px;
+    }
+}
+.top svg {
+    position: absolute;
+    bottom: 0;
+    fill: $themeGray;
+    stroke: $themeGray;
+    background-color: transparent;
+}
+*/
+
 .service {
   padding-top: 60px;
   text-align: center;
@@ -350,9 +480,13 @@ html {
 }
 
 .service-item {
-  padding: 80px 20px 80px 20px;
+  width: 99%;
+  border-radius: 10px;
+  border: 5px solid #6859a8;
+  padding: 40px 20px 20px 20px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
 }
 
 .service-item img {
@@ -413,24 +547,21 @@ html {
   padding: 20px 0 10px 0;
 }
 
+.skill_tag {
+  padding-left: 80px;
+}
+
 .skill_tag h4 {
   padding: 50px 0 30px 0;
 }
 
-.skill_tag h4,
-.skill_tag input,
-.skill_tag .skill_tag-list {
-  margin-left: 80px;
-}
-
 .skill_tag input {
-  width: 280px;
-  margin-left: 180px;
-  margin-bottom: 40px;
+  width: 80%;
   border-style: none;
   background-color: #f5f5f5;
   border-radius: 5px;
   padding: 15px 10px 10px 10px;
+  margin-bottom: 50px;
 }
 
 .skill_tag input[type=text]:focus {
@@ -449,6 +580,12 @@ html {
   margin-top: 180px;
   fill: #54606c;
   stroke: #54606c;
+}
+
+@media screen and (max-width: 425px) {
+  .skill_tag {
+    padding-left: 0;
+  }
 }
 
 .portfolio {
@@ -496,7 +633,6 @@ html {
 }
 
 .contact_form-body {
-  width: 360px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -513,11 +649,11 @@ html {
 .contact textarea {
   background-color: lightgrey;
   color: black;
-  width: 400px;
   outline: none;
   border: none;
   border-radius: 5px;
   padding: 15px;
+  width: 100%;
 }
 
 .contact input[type=text] {
@@ -525,7 +661,8 @@ html {
 }
 
 .contact input[type=submit] {
-  width: 120px;
+  width: 100%;
+  height: 40px;
   color: white;
   background-color: #6859a8;
   border: none;
@@ -576,8 +713,8 @@ html {
 }
 
 /*
- *   Custom Modal Style
- */
+     *   Custom Modal Style
+     */
 
 .modal-mask {
   position: fixed;
@@ -632,7 +769,7 @@ html {
 }
 
 .modal-skill_header {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .modal-skill_tool {
@@ -670,17 +807,18 @@ html {
 }
 
 .modal-bottom_cross i {
-  margin: 25px 50px 30px 0;
   padding: 5px 10px 5px 10px;
   border-radius: 3px;
   font-size: 30px;
   color: gray;
   cursor: pointer;
+  transition: .5s;
 }
 
 .modal-bottom_cross i:hover {
   background-color: lightgrey;
   color: white;
+  transition: .5s;
 }
 
 /*

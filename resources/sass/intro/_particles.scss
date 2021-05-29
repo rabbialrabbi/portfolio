@@ -1,15 +1,1 @@
-.top-particles {
-    position: relative;
-    height: 100%;
 
-    &_background{
-        width: 100%;
-        //height: 800px;
-        & svg {
-            fill: $themeGray;
-            stroke: $themeGray;
-            background-color: #191C1D;
-        }
-    }
-}
-//$themeGray

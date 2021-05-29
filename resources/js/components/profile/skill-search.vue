@@ -1,5 +1,5 @@
 <template>
-    <div class="col-sm-6 skill_tag">
+    <div class="col-sm-6 skill_tag text-center">
         <h4>Looking for particular Skill ?</h4>
         <input type="text" placeholder="Write particular skill you want" v-model="filterKey">
         <div class="skill_tag-list" >

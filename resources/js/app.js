@@ -5,8 +5,10 @@ import sendMessage from "./components/profile/sendMessage";
 import modal from './components/protfolio/modal/modal';
 import VueAwesomeSwiper from "vue-awesome-swiper";
 import TopComponent from "./components/top/TopComponent";
+import ServicesComponent from "./pages/profile/components/ServicesComponent";
+import SkillComponent from "./pages/profile/components/SkillComponent";
 import 'swiper/css/swiper.css'
-import VueParticles from 'vue-particles'
+// import VueParticles from 'vue-particles'
 // import particlesJS from 'particles.js'
 import par from "./particles"
 
@@ -17,7 +19,7 @@ require('./bootstrap');
 window.Vue = require('vue');
 Vue.use(VueAwesomeSwiper);
 
-Vue.use(VueParticles);
+// Vue.use(VueParticles);
 
 
 
@@ -39,5 +41,7 @@ const app = new Vue({
       portfolioImg,
       sendMessage,
       TopComponent,
+        ServicesComponent,
+         SkillComponent
     }
 });
